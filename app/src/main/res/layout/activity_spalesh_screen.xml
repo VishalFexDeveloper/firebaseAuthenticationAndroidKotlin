@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpaleshScreen"
+    android:background="@color/new1"
+    android:orientation="vertical"
+    tools:ignore="MissingClass">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_double_arrow"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:padding="28sp">
+        <TextView
+            android:id="@+id/todo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToDO"
+            android:textSize="38sp"
+            android:textColor="#43A047"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

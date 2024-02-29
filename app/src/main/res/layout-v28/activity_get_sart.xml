@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".GetSart">
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/design_circle"
+        />
+    <ImageView
+        android:id="@+id/undraw_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/undraw_mobile"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get things done with ToDo"
+        android:textColor="#F56CD3DF"
+        android:textStyle="bold|italic"
+        android:padding="15dp"
+        android:layout_marginTop="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/undraw_mobile"
+        android:textSize="26sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom|center_horizontal"
+        android:layout_height="match_parent">
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/createAccountBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="Create Account"
+            android:textColor="@color/new1"
+            android:textSize="20sp"
+            app:shapeAppearance="@style/corner"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#F56CD3DF"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="LOGIN"
+            android:textColor="@color/new1"
+            android:textSize="20sp"
+            app:icon="@drawable/baseline_arrow_forward_24"
+            app:iconGravity="textEnd"
+            app:iconTint="@color/new1"
+            app:iconSize="30dp"
+            app:shapeAppearance="@style/corner"
+            android:backgroundTint="#F56CD3DF"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="8dp"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:textColor="@color/newcolor"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/googleBtn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="48dp"
+                android:backgroundTint="@color/white"
+                app:cardUseCompatPadding="true">
+
+            <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/search_google_icon"/>
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="48dp"
+                app:cardUseCompatPadding="true">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icons_facebook"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="48dp"
+                android:outlineSpotShadowColor="@color/black"
+                android:backgroundTint="@color/white"
+                app:cardUseCompatPadding="true">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icons_microsoft"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id">AAAAkgOChWg:APA91bGhXCp-5rKirlnQJPOG2TPUV6KeaSNfa9bXF6wxFFJfytSiuzIQ63Jy1PRVkg1sdDV0tdyo-DntpXF96qwtyy08Ne4ZN-NpiMI0AZmln9IuP24GQyZqKvZtvkT8jIimJSh6p3jI</string>
+    <string name="app_name">Firebase auth</string>
+    <string name="login_with_mobile_number">login with mobile number</string>
+    <string name="login">LOGIN</string>
+    <string name="already_have_an_account">already have an account</string>
+    <string name="password">Password...</string>
+    <string name="welcome_back">WelCome Back!</string>
+    <string name="email">Email...</string>
+    <string name="forget_password">forget password</string>
+    <string name="create_account">create Account</string>
+
+    <style name="corner50">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="25sp"
+    android:background="@color/white"
+    tools:context=".LognInActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_back"
+        android:textSize="25sp"
+        android:paddingHorizontal="20sp"
+        android:padding="25sp"
+        android:textColor="#FC8585"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_below="@id/title"
+        android:src="@drawable/welcomeimg_re"
+        android:layout_marginTop="20sp"
+        android:layout_height="250dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/loginEmailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="@string/email"
+            android:inputType="textEmailSubject"
+            android:paddingStart="8dp"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/edittext_bkd"
+            android:shadowColor="@color/new1"
+            android:layout_marginHorizontal="25dp"
+            android:elevation="10dp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/loginPasswordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="8dp"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/edittext_bkd"
+            android:shadowColor="@color/new1"
+            android:layout_marginHorizontal="25dp"
+            android:elevation="10dp"
+            tools:ignore="RtlSymmetry,TextFields" />
+
+        <TextView
+            android:id="@+id/forgetText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#FF0000"
+            android:gravity="end"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="25dp"
+            android:text="@string/forget_password"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signUpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="@string/login"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="25dp"
+            android:textColor="@color/new1"
+            android:backgroundTint="#FC8585"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already_have_an_account"
+                android:textColor="#FC8585"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvRedirectLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_account"
+                android:textColor="#18206F"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

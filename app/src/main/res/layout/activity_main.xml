@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/login_with_mobile_number"
+        android:textSize="25sp"
+        android:textColor="#43A047"
+        android:textStyle="bold|italic"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="50dp">
+
+            <EditText
+                android:id="@+id/sendNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter number"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sendOtpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#43A047"
+            app:icon="@drawable/baseline_arrow_forward_24"
+            android:text="send opt"
+            android:textSize="18sp"
+            app:iconGravity="textEnd"
+            app:iconSize="30dp"
+            android:textColor="@color/white"
+            app:shapeAppearance="@style/corner"
+           />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

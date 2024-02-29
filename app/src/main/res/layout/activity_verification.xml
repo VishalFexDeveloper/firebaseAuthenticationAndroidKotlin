@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VerificationActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:text="Resend OTP"
+        android:textSize="25sp"
+        android:textColor="#FC8585"
+        android:textStyle="bold|italic"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/welcomeimg_re"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+
+        <EditText
+            android:id="@+id/verticalEdit"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:hint="resend OTP"
+            android:gravity="center"
+            android:inputType="textEmailSubject"
+            android:paddingStart="8dp"
+            android:layout_marginTop="20sp"
+            android:layout_margin="25dp"
+            android:background="@drawable/edittext_bkd"
+            android:shadowColor="@color/new1"
+            android:elevation="10dp"
+            />
+
+
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/verticalBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FC8585"
+            app:icon="@drawable/baseline_arrow_forward_24"
+            android:text="VERIFY"
+            android:textSize="18sp"
+            app:iconGravity="textEnd"
+            app:iconSize="30dp"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="25dp"
+            app:shapeAppearance="@style/corner"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
